@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NodeJS
 
-## Available Scripts
+O node é uma plataforma que permite o desenvolvimento para back-end utilizando a linguagem JS.
+A tecnologia responsável por ler o JS é chamada de V8, encontrado em navegadores como o Chrome.
+O Node possibilita a utilização de várias APIs para conseguirmos codificar em JS e o mesmo ser lido por recursos de máquina.
 
-In the project directory, you can run:
+# React
 
-### `npm start`
+Criado pelo Facebook junto com o Instagram.
+O React, primeiramente, não é um Framework e sim uma lib de componentização. Trabalho com views e componentização.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O React a princípio foi criado pensando em Web, entretanto hoje já existe o RN (React Native) para mobile e o Electron, para desenvolvimento desktop.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Framework vs Lib
+Geralmente o framework é mais completo e possibilita recursos para requisições AJAX, etc... O Angular é um framework.
 
-### `npm test`
+# Yarn
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Desenvolvido pelo Facebook.
+A diferença entre o _npm_ e o _yarn_ a princípio era de que o npm em suas primeiras versões tinha um problema com relação a pacotes comuns de dependências diferentes. Então quando instalávamos dois pacotes com dependências diferentes, a versão que ficava no projeto da dependência comum era a da última que foi instalada. O _yarn_ desde o seu início não tinha esse problema. Entretanto, nas versões mais atuais o _npm_ resolve isso fazendo uso do arquivo _package-lock.json_ que administra essas dependências entre pacotes diferentes. 
 
-### `npm run build`
+# npm vs npx
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O _npm_ instala o pacote definitivo na máquina. O _npx_ funciona apenas para executarmos um determinado comando de um pacote que não temos na máquina, usar os recursos daquele comando e logo em seguida desinstala aquele mesmo comando. Então serve para pacotes que não iremos usar sempre na nossa máquina. Ex:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+npx create-react-app // esse pacote funciona apenas para criarmos um projeto em react, nada mais
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# git shortcuts
 
-### `npm run eject`
+Para trackear um repositório local com um remoto, basta:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+git remote add origin [caminho do repositório]
+```
