@@ -14,6 +14,8 @@ O React a princípio foi criado pensando em Web, entretanto hoje já existe o RN
 Framework vs Lib
 Geralmente o framework é mais completo e possibilita recursos para requisições AJAX, etc... O Angular é um framework.
 
+O React utiliza uma lib para escrever HTML dentro de um arquivo JS que é o JSX.
+
 # Yarn
 
 Desenvolvido pelo Facebook.
@@ -84,4 +86,31 @@ index.js - Garante que o elementos tenham o mesmo comportamento
 h1 {
     font-size: 2.4 rem;
 }
+```
+
+`3ª camada - Objects`
+
+```
+Essa camada precisa ser:
+
+Simples (burro, stateless (sem estado));
+Um mesmo conceito de OO, ou seja, que possibilite o reaproveitamento;
+
+Precisa evitar ao máximo colocar:
+
+Margin/padding/display:flex/position/float
+```
+
+`2ª camada - Components`
+
+```
+Essa camada precisa ter dentro do component:
+
+Complexo (statefull (com estado));
+Reutilizável;
+margin/padding/position/display:flex
+
+Precisa evitar ao máximo colocar no component em si:
+
+margin/padding/position/display:flex
 ```
