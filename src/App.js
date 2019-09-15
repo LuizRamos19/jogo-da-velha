@@ -1,6 +1,8 @@
 import React from 'react';  //, { Fragment } opcional se fosse usar o Fragment no wrapper
 import Sobre from './objects/Sobre';
 import Logo from './objects/Logo';
+import Menu from './objects/Menu';
+
 
 function App() {
     return (
@@ -14,6 +16,7 @@ function App() {
         <>
             <Logo />
             <Sobre />
+            <Menu />
         </>
     );
 }
