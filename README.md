@@ -34,3 +34,54 @@ Para trackear um repositório local com um remoto, basta:
 ```
 git remote add origin [caminho do repositório]
 ```
+
+# ITCSS
+
+O ITCSS é uma arquitetura de criação de pastas do projeto para organizar o CSS. É baseado em um triângulo invertido de 7 camadas onde cada uma pode consumir recursos da base + 1 camada acima.
+
+```
+7ª camada - settings (variáveis globais. Ex: colors.js, etc)
+6ª camada - tools (Funções comuns. Ex: base.js)
+5ª camada - generic (Retirar comportamento padrão dos navegadores. Normalmente se usa seletores de tag nessa camada. Ex: reset.css)
+4ª camada - base, elements (Garantir que os elementos tenham de fato as suas características. Normalmente se usa seletores de tag nessa camada.)
+3ª camada - objects (Fazer com que um title, por exemplo, possa ser usado em lugares diferentes. Normalmente se usa seletores de classes nessa camada)
+2ª camada - components (Diferente da objects, aqui o elemento é mais específico. Normalmente se usa seletores de classes nessa camada)
+1ª camada - 
+```
+
+`7ª camada - Settings`
+
+```
+colors.js
+size.js - tamanho de fonts, etc
+spacing.js - espaçamentos, respiros, etc
+etc...
+```
+
+`6ª camada - Tools`
+
+```
+functions.js
+
+const center = (width) => { `
+    display: block;
+    width: ${width};
+    margin: auto;
+`};
+```
+
+`5ª camada - Generics`
+
+```
+reset.css
+```
+
+`4ª camada - Base ou Elements`
+
+```
+index.js - Garante que o elementos tenham o mesmo comportamento
+
+h1 {
+    font-size: 2.4 rem;
+}
+```

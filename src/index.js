@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/settings/colors.css';
+import './styles/generics/reset.css';
+import './styles/elements/base.css';
+// essas linhas de import css não são características do JS, elas estão acessando um recurso do react-scripts
+// que é o webpack para conseguir injetar esses arquivos no nosso projeto
 import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
