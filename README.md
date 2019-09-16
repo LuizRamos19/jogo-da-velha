@@ -114,3 +114,17 @@ Precisa evitar ao máximo colocar no component em si:
 
 margin/padding/position/display:flex
 ```
+
+# Flexbox
+
+Quando colocamos um pai com uma propriedade _display: flex_, esse elemento pai recebe o nome de _flex container_, e seus filhos recebendo o nome de _flex item_.
+
+Nesta propriedade existem dois eixos, o _main axis_ (horizontal) e o _cross axis_ (vertical).
+
+```
+cross start     ------------------------
+                |                      |
+                |                      |
+cross end       ------------------------
+            main start              main end
+```
