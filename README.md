@@ -128,3 +128,12 @@ cross start     ------------------------
 cross end       ------------------------
             main start              main end
 ```
+
+# Grid
+
+display: grid;
+         inline-grid;
+
+grid-item:
+grid-line: controla o espaço entre os itens dentro do container (gap)
+grid-track: representa as linhas verticais e horizontais do grid container
