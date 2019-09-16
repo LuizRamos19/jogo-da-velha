@@ -14,8 +14,20 @@ function App() {
     return (
         <>
             <Header />
-            <Card />
-            <Player player="x" />
+            <Card>
+                {/* A forma como o object Card acessa os seus filhos estão descrito no arquivo Card/index.js */}
+                <Player player="x" />
+                <Player player="x" />
+                <Player player="x" />
+
+                <Player player="o" />
+                <Player player="o" />
+                <Player player="o" />
+
+                <Player player="x" />
+                <Player player="x" />
+                <Player player="x" />
+            </Card>
         </>
     );
 }
