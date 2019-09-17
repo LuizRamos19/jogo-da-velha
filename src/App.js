@@ -1,4 +1,5 @@
 import React from 'react';  //, { Fragment } opcional se fosse usar o Fragment no wrapper
+import './App.css';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 // Em versões atuais do JSX, não é mais necessário
@@ -9,13 +10,11 @@ import Hashtag from './components/Hashtag';
 // </Fragment>
 // wrapper com <></>
 
-function App() {
-    return (
-        <>
-            <Header />
-            <Hashtag />
-        </>
-    );
-}
+const App = () => (
+    <main className="app">
+        <Header />
+        <Hashtag />
+    </main>
+);
 
 export default App;
