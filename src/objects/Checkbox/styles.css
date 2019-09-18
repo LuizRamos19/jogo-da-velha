@@ -12,3 +12,8 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Sinal de + significa que quero pegar o irmão seguinte daquele elemento */
+.input:checked + .label::before {
+    background-color: var(--color-first);
+}
