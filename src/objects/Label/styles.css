@@ -6,3 +6,9 @@
     font-weight: bold;
     color: var(--color-fourth);
 }
+
+/* selection muda a cor da seleção do texto pelo usuário */
+.label::selection {
+    background-color: var(--color-first);
+    color: var(--color-zero);
+}
