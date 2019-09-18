@@ -2,6 +2,11 @@
     display: none;
 }
 
+.label {
+    display: inline-flex;
+    align-items: center;
+}
+
 .label::before {
     content: "";
     display: inline-block;
@@ -11,6 +16,7 @@
     box-sizing: border-box; /* evita que os 3px da borda some com os 20px e fique 26px */
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 /* Sinal de + significa que quero pegar o irmão seguinte daquele elemento */
