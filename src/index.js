@@ -4,6 +4,7 @@ import './styles/settings/colors.css';
 import './styles/settings/spacing.css';
 import './styles/generics/reset.css';
 import './styles/elements/base.css';
+import './styles/settings/size.css';
 // essas linhas de import css não são características do JS, elas estão acessando um recurso do react-scripts
 // que é o webpack para conseguir injetar esses arquivos no nosso projeto
 import App from './App';

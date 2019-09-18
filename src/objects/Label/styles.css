@@ -1,0 +1,8 @@
+.label {
+    width: 115px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-size: var(--size-small);
+    font-weight: bold;
+    color: var(--color-fourth);
+}
