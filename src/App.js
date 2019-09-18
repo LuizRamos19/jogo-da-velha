@@ -2,6 +2,7 @@ import React from 'react';  //, { Fragment } opcional se fosse usar o Fragment n
 import './App.css';
 
 import Label from './objects/Label';
+import Input from './objects/Input';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 // Em versões atuais do JSX, não é mais necessário
@@ -16,6 +17,7 @@ const App = () => (
     <main className="app">
         <Header />
         <Hashtag />
+        <Input />
         <Label content="Mostrar eventos" />
     </main>
 );
