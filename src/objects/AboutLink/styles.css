@@ -9,3 +9,7 @@
     color: #707070;
     text-decoration: none;
 }
+
+.about-link.-light {
+    color: var(--color-zero);
+}
